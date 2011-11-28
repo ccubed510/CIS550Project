@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Cis_550_hw3.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>QueryTables</servlet-name>
+  	<servlet-class>edu.upenn.cis.cis550.hw3.server.QueryTablesImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>QueryTables</servlet-name>
+  	<url-pattern>/edu.upenn.cis.cis550.hw3.Cis_550_hw3/QueryTables</url-pattern>
+  </servlet-mapping>
+</web-app>
